@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&family=Lobster&family=Parisienne&display=swap" rel="stylesheet">
+	<title>Q3 | PROJECT | REGISTER NOW</title>
+	<style type="">
+    
+body{
+  background: url('banner.webp')
+  background-size:  cover;
+  background-attachment: fixed;
+}
+
+form{
+  margin: 70px;
+}
+
+label{
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+}
+
+h6{
+  font-family: Courier new;
+  color: whitesmoke;
+}
+
+h2{
+  font-family: 'Lobster', cursive;
+}
+
+</style>
+
+</head>
+<body class="bg-secondary">
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Amethyst Update!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+           <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#">Fire Prevention Month</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Founders</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Register Now</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class=".container">
+  <br><br>
+  <h2 align="center">REGISTER NOW TO BE UPDATED MORE ABOUT NEWS!</h2>
+  
+  <form>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="eml" placeholder="Enter email" name="Email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div>
+      <label class="form-check-label">
+        <input class="checkbox" type="checkbox" name="remember"> Remember me
+      </label>
+    </div><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-danger">Cancel</button>
+  </form>
+</div>
+<hr>
+<div class=".container bg-dark" >
+  <br><br>
+  <h2 align="center" class="text-light">WANT TO BE AN EMPLOYEE OF AMETHYST NEWS? SEND YOUR APPLICATION NOW!</h2>
+  
+  <form>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="eml" placeholder="Enter email" name="Email">
+    </div>
+    <div class="custom-file">
+      <label class="custom-file-label" for="customFile">Upload Your Application:</label>
+      <input type="file" class="custom-file-input" id="customFile">
+   </div><br><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-danger">Cancel</button>
+  </form><br>
+</div><br><hr>
+<br><br>
+<div>
+  <h6 align="center">
+    Special Thanks to:<br><br>
+      -Rhianne Miles M. Sumndad<br>
+      -Amethyst Editors<br>
+      -Amethyst Publishers<br>
+      -Amy Fans<br>
+  </h6><br><br><hr>
+</div>
+<script>
+// Add the following code if you want the name of the file appear on select
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+</script>
+</body>
+</html>
